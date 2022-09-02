@@ -14,8 +14,9 @@ Port number is 9494 kyuki jo port number hm yha per assign krenge us port number
 Apache install krte time role m comma lgakr manager-script add krna hota h.
 To check ki server run ho rha h ya nhi, apne browser per localhost:9494 krke enter krdo to tomcat ka interface aa jayga means run ho rha h.
   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Configure Apache server with Netbeans
+URL- https://www.youtube.com/watch?v=hbzL22lJpp8&list=PL0zysOflRCel5BSXoslpfDawe8FyyOSZb&index=3
 
 
-
-  
   
