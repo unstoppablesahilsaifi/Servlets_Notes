@@ -52,6 +52,43 @@ then hme mapping krni hogi or server ko ye batana hoga ki hmne ke servet bnaya h
 // Mapping krni hoti h web.xml file m or is file ka naam hota h deployment descriptor
  
   
-  
-  
-  
+//Web pages k andar HTML,CSS and JavaScript ki file rakhi jaati h and sourse package k andar java ki file rakhi jaati h.
+javax.servlet.*; isko import krna pdega
+
+// Code
+package com.servlets;
+import javax.servlet.*;
+
+/**
+ *
+ * @author admin
+ */
+public class FirstServlet implements Servlet {
+    ServletConfig conf;
+    public void init(ServletConfig conf)
+    {
+        this.conf=conf;
+        System.out.println("Creating object:...........");
+    }
+    public void service(ServletRequest req, ServletResponse resp)throws ServletException,IOException
+    {
+       System.out.prinln("servicing.....")
+            
+    }
+    public void destroy()
+    {
+        System.out.println("going to destroy....");
+    }
+    //Non Life Cycle Method
+    public ServletConfig getServletConfig()
+    {
+        return this.conf;
+    }
+    public String getServletInfo()
+    {
+        return "This is created by Sahil Saifi";
+    }
+}
+
+// Code(Servlet) execute krne k liye hme mapping krni h  ek xml file bnani pdegi
+WEB-INF k andar web.xml file bnti h 
