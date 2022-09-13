@@ -29,3 +29,29 @@ The module has not been deployed. See the server log for details. BUILD FAILED (
 Solution--> 
 Check out the Windows Services (Services App) and stop the Apache Tomcat if running, then from Netbeans menu select Run->Run Project.
 Netbean will start Tomcat and deploy your web app onto the Tomcat server.
+  
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+// Creating servlet using implement Servlet
+Java m ek package h javax.servlet or iske andar s interface h jiska naam h Servlet
+to is interface k andar 5 methods h.
+1. public abstract void init(javax.servlet.ServletConfig)
+2. public ServletConfig getServletConfig(); // to get the object of servlet
+3. public void service(javax.servlet.ServletRequest,javax.servlet.ServletResponse);
+4. public abstract java.lang.String getServletInfo(); // to know the information of Servlet
+5. public abstract void destroy();
+// 1,3,5 are the Life Cycle Method
+
+
+Ab hme ek user defined class bnani pdegi or is interface ko implement krke iske methods ko override krna pdega.
+jaise-> class MyServlet implements Servlet
+        {
+        //Override the methods
+        }
+then hme mapping krni hogi or server ko ye batana hoga ki hmne ke servet bnaya h or us servlet ko execute kaise krna h with the help of URL pattern
+// Mapping krni hoti h web.xml file m or is file ka naam hota h deployment descriptor
+ 
+  
+  
+  
+  
