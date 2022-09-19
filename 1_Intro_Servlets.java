@@ -123,5 +123,89 @@ WEB-INF k andar web.xml file bnti h
 
 
 
+// Creating servlet using GenericServlet Class.
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+
+public class SecondServlet extends GenericServlet {
+
+    @Override
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+       System.out.println("this is servlet using Generic servlet");
+       res.setContentType("text/html");
+       PrintWriter out=res.getWriter();
+       out.println("<h1>this is my second servlet using generic class.</h1>");
+    }
+    
+}
+
+// web.xml file
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <!-- Servlet declaration-->
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.servlet.FirstServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.servlet.SecondServlet</servlet-class>
+    </servlet>
+     <!-- Mapping-->
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/sweb</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
+// index.html file
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <h1>This is my first project</h1>
+        <h1><a href="web">FirstServlet</a></h1> 
+        <h1><a href="sweb">SecondServlet</a></h1>
+    </body>
+</html>
+
+
+// Ab samjho output 
+// jab localhost:9494/ZTest ko run krenge ko to output m href aayga dono servlet ka jis link per click krke accordingly hm servlet ka output dekh sakte h 
 
