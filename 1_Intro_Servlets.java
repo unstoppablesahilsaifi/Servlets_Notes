@@ -92,3 +92,36 @@ public class FirstServlet implements Servlet {
 
 // Code(Servlet) execute krne k liye hme mapping krni h  ek xml file bnani pdegi
 WEB-INF k andar web.xml file bnti h 
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <!-- Servlet declaration-->
+    <servlet>
+        <servlet-name>first</servlet-name>  // Yha s sirf name dete h servlet ka pehchan k liye 
+        <servlet-class>com.servlet.FirstServlet</servlet-class> // yha s pura path dete h servlet java program ka
+    </servlet>
+     <!-- Mapping-->
+    <servlet-mapping>
+        <servlet-name>first</servlet-name> // 2. but is mapping s pta chlega ki mere bhai ye vala sevlet run krna h is URL ko hit krne pe
+        <url-pattern>/web</url-pattern>    // 1. Yha s web URL define krte h ki agar URL m ye dete h to servlet run ho jayga.
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
+// Note: jab localhost:9494/ZTest ho hit krenge to html page run hoga and isi url m /web add krdete h to servlet run ho jayga but hme show hoga console p kyuki system
+//       out.println use kiya h servlet m
+
+
+
+
+
+
