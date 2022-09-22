@@ -121,7 +121,7 @@ WEB-INF k andar web.xml file bnti h
 //       out.println use kiya h servlet m
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Creating servlet using GenericServlet Class.
 
