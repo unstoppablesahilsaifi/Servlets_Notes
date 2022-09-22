@@ -209,3 +209,55 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 // Ab samjho output 
 // jab localhost:9494/ZTest ko run krenge ko to output m href aayga dono servlet ka jis link per click krke accordingly hm servlet ka output dekh sakte h 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+// Creating servlet using HttpServlet class
+package com.prac;
+import java.io.PrintWriter;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+public class HTServ extends HttpServlet{
+    public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException
+    {
+        System.out.prinln("this is get method");
+         res.setContentType("text/html");
+         PrintWriter out=res.getWriter();
+       out.println("<h1>this is my get method.</h1>");
+    }
+}
+
+
+// for mapping web.xml file
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <!-- Servlet declaration-->
+    <servlet>
+        <servlet-name>mf</servlet-name>
+        <servlet-class>com.prac.HTServ</servlet-class>
+    </servlet>
+     <!-- Mapping-->
+    <servlet-mapping>
+        <servlet-name>mf</servlet-name>
+        <url-pattern>/msv</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
+
+
+
+
+
+
+
