@@ -132,12 +132,12 @@ public class RegisterServlet extends HttpServlet {
      * @throws IOException
      */
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException{
-        response.setContentType("text/html");
-        PrintWriter out=response.getWriter();
+    public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException{ //request ki help s data fetch kr sakte h and resp
+        response.setContentType("text/html");  // batana hoga ki m output html vala dunga                            // ki help s dynamic response generate kr sakte h 
+        PrintWriter out=response.getWriter();  // ab hme write mil gya to iski help s hm output de sakte h browser ko.
         out.println("<h1>Welcome to register Servlet</h1>");
-        String name=request.getParameter("user_name");
-        String password=request.getParameter("user_password");
+        String name=request.getParameter("user_name"); // request ki help s data nikalenge kyuki data aa rha hoga vo req k paas aa rha hoga, kyuki client koi bhi data
+        String password=request.getParameter("user_password"); // send krega vo req k pass hi aayga. (getParameter k andar hme form field ka naam dena hota h)
         String email=request.getParameter("user_email");
         String gender=request.getParameter("user_gender");
         String course=request.getParameter("user_course");
