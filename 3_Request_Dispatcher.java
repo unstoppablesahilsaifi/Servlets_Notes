@@ -154,3 +154,38 @@ public class SuccessServlet extends HttpServlet{
 
   
   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Ab hmee suppose kro koi or html page as a home page show krna h 
+Home.html
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    <h1>This is home html fileeeeeeee.........</>h1
+        <a href="index.html">Register Here</a>
+    
+    </body>
+</html>
+
+// but hme mapping krke ye bhi to btana pdega ki bhai ye h hmara main html page mtlb home.html
+  <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+   </welcome-file-list>
+   // isko web.xml m add krdo
+   
+// jab is project ko run krenge to index.html ki jagah home.html pehle aayga	
+		
+		
+		
+		
+		
