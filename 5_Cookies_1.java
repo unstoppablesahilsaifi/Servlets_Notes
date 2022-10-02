@@ -25,3 +25,15 @@ obvious h ki ab coockie request k sath aa rhi hogi to hme vhi s fetch krni h.
  Coockie c[]=request.getCoockie();
 // isme s coockie nikalkr ek array m store kr lenge. agar kuch nhi hoga coockie to array m NULL hoga.
   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Coockies Example
+  
+// Lets understand firstly use case-
+Suppose there are two servlet S1 and S2 and ek home page tha index.html-> is html page m ek form tha and submit button tha and form chala jata tha S1 servlet pe
+mtlb requesr r1 chali jaati thi S1 k paas with name and S1 ek response generate krta tha (Output aata tha hello sahil welcome to page 1 and go to servlet 2)
+but jab hm servlet 2 pe jate the to name ko hold nhi krta tha Null show krta tha.
+==>> Handle krne k liye hm res1 m name daalkr send kr denge jo client ki machine m save ho jaygi to jab r2 jaygi to cookie bhi sath jaygi then servlet will fetch
+the coockie and got to know ki bhai ye vhii bnda h and output will be printed
+
+  
+  
