@@ -120,6 +120,9 @@ WEB-INF k andar web.xml file bnti h
 // Note: jab localhost:9494/ZTest ho hit krenge to html page run hoga and isi url m /web add krdete h to servlet run ho jayga but hme show hoga console p kyuki system
 //       out.println use kiya h servlet m
 
+// NOTEEEEEEEEEEEEE- agar progrma nhi chala to IOExeption ko hta do
+java.lang.RuntimeException: Uncompilable code - service(javax.servlet.ServletRequest,javax.servlet.ServletResponse) in com.servlets.FirstServlet cannot implement service(javax.servlet.ServletRequest,javax.servlet.ServletResponse) in javax.servlet.Servlet
+  overridden method does not throw com.servlets.IOException
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
