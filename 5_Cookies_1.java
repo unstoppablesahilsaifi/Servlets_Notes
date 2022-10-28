@@ -36,4 +36,5 @@ but jab hm servlet 2 pe jate the to name ko hold nhi krta tha Null show krta tha
 the coockie and got to know ki bhai ye vhii bnda h and output will be printed
 
   
-  
+// https://www.javatpoint.com/cookies-in-servlet
+agar output m 405 deta h to SecondServlet m doPost ki jagah doGet lga dena
